@@ -127,3 +127,45 @@ export const exampleIncident =
         "url": "https://sim.com/incidents/458599"
     }
 }
+
+export const exampleMaintenance = {
+    "id": "15486",
+    "start": "2019-07-06T13:33:03.969Z",
+    "finish": "2019-07-06T13:45:03.969Z",
+    "title": "Installation of new hard drives",
+    "services": [
+        "db1"
+    ],
+    "refresh": 200000,
+    "updates": [
+        {
+            "description": "We are upgrading our hard drives to improve performance",
+            "date": "2019-07-06T13:33:03.969Z"
+        }
+    ],
+    "support": {
+        "email": "support@sim.com",
+        "telephone": "+1-202-555-0198",
+        "url": "https://sim.com/maintenance/15486"
+    }
+}
+export const exampleLocation = {
+    "lat": 56.6208152,
+    "long": -3.9526817
+};
+
+export const exampleUpdate = {
+    "description": "We are upgrading our hard drives to improve performance",
+    "date": "2019-07-06T13:33:03.969Z"
+}
+export const exampleSupport = {
+    "email": "support@sim.com",
+    "telephone": "+1-202-555-0198",
+    "url": "https://sim.com/maintenance/15486"
+}
+
+export const exampleRoot = {
+    "services":[],
+    "incidents":[],
+    "maintenance":[]
+}

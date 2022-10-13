@@ -3,7 +3,7 @@ import { exampleJson, exampleService } from "../data/Example"
 import { Alert, Tabs } from "flowbite-react";
 import { Code } from "../components/Code";
 import { Definition } from "../components/Definition";
-import { definitionIncident, definitionService } from "../data/Definitions";
+import { definitionIncident, definitionLocation, definitionMaintenance, definitionRoot, definitionService, definitionSupport, definitionUpdate } from "../data/Definitions";
 
 
 export const Spec = () => {
@@ -19,8 +19,7 @@ export const Spec = () => {
                             The Spec
                         </h2>
                         <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                            SIM is a communication protocol that details how the health of a system should be shared. At its
-                            simplest it defines the format of a JSON endpoint that expose this information.
+                            SIM simply defines the communication s
                         </p>
                         <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
 
@@ -150,15 +149,22 @@ const Example = () => {
 
 
 const Docs = () => {
-
-
-
     return (
         <>
-
+            <Definition definition={definitionRoot} />
+            <hr className="my-10 border-2" />
             <Definition definition={definitionService} />
             <hr className="my-10 border-2" />
             <Definition definition={definitionIncident} className="" />
+            <hr className="my-10 border-2" />
+            <Definition definition={definitionMaintenance} className="" />
+
+            <hr className="my-10 border-2" />
+            <Definition definition={definitionLocation} className="" />
+            <hr className="my-10 border-2" />
+            <Definition definition={definitionUpdate} className="" />
+            <hr className="my-10 border-2" />
+            <Definition definition={definitionSupport} className="" />
         </>
     )
 }
