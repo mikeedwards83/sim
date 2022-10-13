@@ -19,7 +19,8 @@ export const Spec = () => {
                             The Spec
                         </h2>
                         <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                            SIM simply defines the communication s
+                            The SIM Standard simply defines how a status endpoint should format the information is returns. 
+                            
                         </p>
                         <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
 
