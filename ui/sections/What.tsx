@@ -56,7 +56,7 @@ export const What = () => {
                     By making this information machine readable and discoverable means we can build better and more robust systems.
                 </p>
             </div>
-            <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="/feature-3.png"
+            <img className="w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="/feature-3.png"
                 alt="dashboard feature image" />
         </div>
 

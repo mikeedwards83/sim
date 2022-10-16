@@ -1,11 +1,11 @@
 export const Why = () => {
 
     return (
-        <div  className="gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-            <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="/feature-4.png"
+        <div  className="gap-8 grid lg:grid-cols-2 xl:gap-16">
+            <img className="w-full mb-4 rounded-lg lg:mb-0 lg:flex order-2 lg:order-1" src="/feature-4.png"
                 alt="dashboard feature image" />
 
-            <div className="text-gray-500 sm:text-lg dark:text-gray-400">
+            <div className="text-gray-500 sm:text-lg dark:text-gray-400 order-1 lg:order-2">
                 <h2  className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                     Why SIM?
                 </h2>
