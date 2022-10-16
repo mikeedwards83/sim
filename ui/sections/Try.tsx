@@ -53,11 +53,11 @@ export const Try = () => {
     }
     return (
         <div  >
-            <div className="text-gray-500 sm:text-lg dark:text-gray-400 pb-8">
-                <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+            <div className="text-gray-500 sm:text-lg  pb-8">
+                <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 ">
                     Give It A Try
                 </h2>
-                <p className="font-light text-gray-500 dark:text-gray-400 pb-2">
+                <p className="font-light text-gray-500  pb-2">
                     Try out the spec yourself by using one of our examples of pointing it at your own implementation.
                 </p>
                 <form onSubmit={onSubmit}>
@@ -89,7 +89,7 @@ export const Try = () => {
                 <div >
 
                     <div className="flex h-full flex-col justify-center gap-4 p-6">
-                        <h4 className="mb-2 text-xl dark:text-white">Examples</h4>
+                        <h4 className="mb-2 text-xl ">Examples</h4>
                         <Button.Group>
                             <Button color="info" onClick={() => setExample("good")}>
                                 👍 All Good
@@ -227,11 +227,11 @@ const Provider = (props: { provider: IProvider }) => {
             img={provider.logo}
             rounded={true}
         >
-            <div className="space-y-1 font-medium dark:text-white">
+            <div className="space-y-1 font-medium ">
                 <div>
                     {provider.name}
                 </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">
+                <div className="text-sm text-gray-500 ">
                     Web: <a href={provider.website} target="_blank">{provider.website}</a> <br />
                     Email: <a href={`mailto:${provider.email}`}>{provider.email}</a>
                 </div>
@@ -384,7 +384,7 @@ const UpdatesDashboard = (props: { updates: IUpdate[] }) => {
 
     return (
         <>
-            <Table.Row className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+            <Table.Row className="bg-gray-50 text-xs uppercase text-gray-700  ">
                 <Table.Cell>
                 </Table.Cell>
                 <Table.Cell>
@@ -470,7 +470,7 @@ export const Support = (props: { support?: ISupport }) => {
             {support && <Table.Row >
                 <Table.Cell>
                 </Table.Cell>
-                <Table.Cell className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+                <Table.Cell className="bg-gray-50 text-xs uppercase text-gray-700  ">
                     Support
                 </Table.Cell>
                 <Table.Cell colSpan={6}>

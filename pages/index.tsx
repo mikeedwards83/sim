@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
 
-
+        <meta name="color-scheme" content="light only" />
         <meta property="og:title" content="Status, Incident and Maintenance (SIM) Standard" />
         <meta property="og:site_name" content="SIM Standard" />
         <meta property="og:url" content="https://sim.com" />
@@ -41,13 +41,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/icon.jpg" />
       </Head>
       <PageHeader />
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white ">
         <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1
-              className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">
+              className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl ">
               Status, Incident and <br />Maintenance (SIM) Standard.</h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
               Creating a standard for sharing the health of the internet by exposing the status of Cloud based
               services in a discoverable and machine readable manner.
             </p>
@@ -60,13 +60,13 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
-      <section id="what" className="bg-gray-50 dark:bg-gray-800">
+      <section id="what" className="bg-gray-50 ">
         <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
           <What />
 
         </div>
       </section>
-      <section id="why" className="bg-gray-50 dark:bg-gray-800" >
+      <section id="why" className="bg-gray-50 " >
         <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
           <Why />
           <Aims />
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
           <Try />
         </div>
       </section>
-      <section className="bg-gray-50 dark:bg-gray-800" id="support">
+      <section className="bg-gray-50 " id="support">
         <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
           <YourSupport />
         </div>

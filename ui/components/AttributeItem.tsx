@@ -11,10 +11,10 @@ export const AttributeItem = (props: { attribute: IAttribute }) => {
                 <span className="pr-3">{attribute.type} </span>
                 {attribute.required && <span className="italic text-xs">(required)</span>}
             </div>
-            <p className="font-light text-gray-500 dark:text-gray-400">
+            <p className="font-light text-gray-500 ">
                 {attribute.description}
             </p>
-            {attribute.format && <p className="font-light text-sm text-gray-500 dark:text-gray-400 pt-2">
+            {attribute.format && <p className="font-light text-sm text-gray-500  pt-2">
                 {attribute.format}
             </p>}
         </li>

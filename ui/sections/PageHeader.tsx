@@ -13,8 +13,11 @@ export const PageHeader = () => {
                             className="mr-3 h-6 sm:h-9"
                             alt="SIM Logo"
                         />
-                        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                        <span className="hidden lg:block self-center whitespace-nowrap text-xl font-semibold ">
                             Status, Incident and Maintenance (SIM) Standard
+                        </span>
+                        <span className="lg:hidden self-center whitespace-nowrap text-xl font-semibold ">
+                            SIM Standard
                         </span>
                     </Navbar.Brand>
                     <Navbar.Toggle />
