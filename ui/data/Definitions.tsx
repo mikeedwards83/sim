@@ -1,6 +1,8 @@
 import { IAttribute } from "../interfaces/IAttribute";
 import { IDefinition } from "../interfaces/IDefinition";
-import { exampleIncident, exampleLocation, exampleMaintenance, exampleRoot, exampleService, exampleSupport, exampleUpdate } from "./Example";
+import { exampleIncident, exampleLocation, exampleMaintenance, exampleProvider, exampleRoot, exampleService, exampleSupport, exampleUpdate } from "./Example";
+
+
 
 export const definitionRoot: IDefinition = {
     name: "Root Object",
@@ -10,6 +12,12 @@ export const definitionRoot: IDefinition = {
     example: exampleRoot,
     attributes: [
         {
+            title: "provider",
+            required: true,
+            type: "Provider Object",
+            description: "Details on the service provider.",
+        },
+        {
             title: "services",
             required: true,
             type: "Service Object[]",
@@ -17,18 +25,56 @@ export const definitionRoot: IDefinition = {
         },
         {
             title: "incidents",
-            required: true,
             type: "Incident Object[]",
             description: "A list of ongoing or historic incidents.",
         },
         {
             title: "maintenance",
-            required: true,
             type: "Maintenance Object[]",
             description: "A list of planned or historic maintenance.",
         }
     ]
 }
+
+export const definitionProvider: IDefinition = {
+    name: "Provider Object",
+    description: <p>
+        The Provider object contains details about the company providing the cloud services.
+    </p>,
+    example: exampleProvider,
+    attributes: [
+        {
+            title: "name",
+            required: true,
+            type: "string",
+            description: "The name of the service provider.",
+            format: "Max length 100 characters"
+        },
+        {
+            title: "website",
+            required: true,
+            type: "string",
+            description: "The website of the service provider",
+            format: "Max length 100 characters"
+        },
+        {
+            title: "email",
+            required: true,
+            type: "string",
+            description: "Email address of the service provider.",
+            format: "Max length 100 characters"
+        },
+        {
+            title: "logo",
+            required: true,
+            type: "string",
+            description: "The logo of the service provider.",
+            format: "Image size: Width: 250px Height: 250px"
+        },
+    ]
+}
+
+
 export const definitionService: IDefinition = {
     name: "Service Object",
     description: <p>
@@ -50,6 +96,13 @@ export const definitionService: IDefinition = {
             type: "string",
             description: "The name of the service.",
             format: "Max length 100 characters"
+        },
+        {
+            title: "description",
+            required: true,
+            type: "string",
+            description: "A short description of the service.",
+            format: "Max length 250 characters"
         },
         {
             title: "date",
@@ -117,8 +170,8 @@ export const definitionIncident: IDefinition = {
         {
             title: "title",
             required: true,
-            type: "date",
-            description: "The date and time that the incident started.",
+            type: "string",
+            description: "A short description of the incident",
             format: "Max Length 100 characters"
         },
         {
@@ -244,7 +297,7 @@ export const definitionUpdate: IDefinition = {
     example: exampleUpdate,
     attributes: [
         {
-            title: "description",
+            title: "details",
             required: true,
             type: "string",
             description: "The details of the update.",

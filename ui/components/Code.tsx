@@ -3,9 +3,9 @@ import babylon from "prettier/parser-babel";
 import { ReactNode, useEffect, useState } from "react";
 import { Alert } from "flowbite-react/lib/esm/components";
 
-export const Code = (props: { title: ReactNode, object: any }) => {
+export const Code = (props: { title: ReactNode, object: any, capitialise?: boolean }) => {
 
-    const { object, title } = props;
+    const { object, title, capitialise = true } = props;
 
     const [code, setCode] = useState<string>();
 
@@ -24,7 +24,7 @@ export const Code = (props: { title: ReactNode, object: any }) => {
     return (
         <>
             <div className="p-6 bg-slate-200 border-slate-400 border border-b-0  rounded-t-md" >
-                <span className="uppercase">{title}
+                <span className={` ${capitialise ? "uppercase" : ""}`}>{title}
                 </span>
             </div>
             {code &&
