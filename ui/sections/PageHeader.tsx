@@ -3,7 +3,7 @@ import { Navbar } from "flowbite-react"
 export const PageHeader = () => {
 
     return (
-        <div className="fixed w-screen bg-white z">
+        <div className="fixed w-screen bg-white " style={{zIndex:1000}}>
             <div className="grid  max-w-screen-xl px-4  mx-auto ">
                 <Navbar fluid  >
 

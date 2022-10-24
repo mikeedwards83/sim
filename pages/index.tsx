@@ -7,7 +7,7 @@ import { Spec } from '../ui/sections/Spec'
 import { Supporters } from '../ui/sections/Supporters'
 import { Try } from '../ui/sections/Try'
 import { What } from '../ui/sections/What'
-import { Why } from '../ui/sections/Why'
+import { Why } from '../ui/sections/Why/Why'
 import { YourSupport } from '../ui/sections/YourSupport'
 
 const Home: NextPage = () => {
