@@ -5,7 +5,7 @@ export const Supporters = () => {
     return (
 
         <div className="">
-            <div className="text-gray-500 sm:text-lg  pb-8">
+            { /* <div className="text-gray-500 sm:text-lg  pb-8">
                 <h2 id="supporters" className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 ">
                     Supporters
                 </h2>
@@ -27,7 +27,7 @@ export const Supporters = () => {
                     </Avatar>
                 </a>
 
-            </div>
+    </div> */}
 
             <div className="items-center max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
                 <div className="text-gray-500 sm:text-lg ">

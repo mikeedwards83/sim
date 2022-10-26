@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Aims } from '../ui/sections/Aims'
+import { Alternatives } from '../ui/sections/Alternatives'
 import { PageFooter } from '../ui/sections/PageFooter'
 import { PageHeader } from '../ui/sections/PageHeader'
 import { Spec } from '../ui/sections/Spec'
@@ -82,11 +83,18 @@ const Home: NextPage = () => {
           <Try />
         </div>
       </section>
-      <section className="bg-gray-50 " id="support">
+      <section className="bg-gray-50 " id="alternatives" >
+        <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+          <Alternatives />
+        </div>
+      </section>
+
+      <section  id="support">
         <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
           <YourSupport />
         </div>
       </section>
+      
       <section >
         <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
           <Supporters />
