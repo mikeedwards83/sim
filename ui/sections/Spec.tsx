@@ -25,7 +25,7 @@ export const Spec = () => {
                         </p>
                         <p className="font-light text-gray-500 sm:text-xl  pb-2">
                             The JSON specification is deliberately simple to make it easy for development teams to implement and consume.
-                            The aim is to create a specification that describes neccessary information and does not get swampped with
+                            The aim is to create a specification that describes necessary information and does not get swamped with
                             details.
                         </p>
                         <p className="font-light text-gray-500 sm:text-xl  pb-2">

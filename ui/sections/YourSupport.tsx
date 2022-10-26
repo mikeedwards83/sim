@@ -49,7 +49,7 @@ export const YourSupport = () => {
                         Contact your service providers and ask them to implement a SIM endpoint.
                     </p>
                     <p className="font-normal text-gray-700 ">
-                        Build you own dashboards and push for change.
+                        Build your own dashboards and push for change.
                     </p>
                 </Card>
 

@@ -186,7 +186,7 @@ export const definitionIncident: IDefinition = {
             title: "services",
             required: true,
             type: "string[]",
-            description: "The IDs of the services affected. Where all sub-systems of a services are affected only list the top level service."
+            description: "The IDs of the services affected. Where all sub-systems of a service are affected only list the top level service."
         },
         {
             title: "updates",
@@ -251,7 +251,7 @@ export const definitionMaintenance: IDefinition = {
             title: "services",
             required: true,
             type: "string[]",
-            description: "The IDs of the services affected by the maintenance. Where all sub-systems of a services are affected only list the top level service."
+            description: "The IDs of the services affected by the maintenance. Where all sub-systems of a service are affected only list the top level service."
         },
         {
             title: "updates",

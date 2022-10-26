@@ -35,7 +35,7 @@ export const What = () => {
                         </svg>
                         <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                             <strong>Incidents</strong> - Details and updates of any incidents affect the services.
-                            Keeping your customers updated in near realtime.
+                            Keeping your customers updated in near real time.
                         </span>
                     </li>
                     <li className="flex space-x-3">

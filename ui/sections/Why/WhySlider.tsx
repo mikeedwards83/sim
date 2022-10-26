@@ -18,8 +18,8 @@ export const WhySlider = () => {
                         <div>
                             <h4 className="mb-2 text-xl ">1. Collect Internal Data</h4>
                             <p className="font-light text-gray-500 sm:text-xl pb-2">
-                                Service Providers uses existing detailed monitoring tools such as Open Telemetary, New Relic, Azure Application Insights,
-                                Amozon Cloud watch and many more to monitor the internal health of there systems.
+                                Service Providers using existing detailed monitoring tools such as Open Telemetry, New Relic, Azure Application Insights,
+                                Amazon Cloud watch and many more to monitor the internal health of their systems.
                             </p>
                         </div>
                         <img src="/why/step1.png" alt="Data collected by internal monitoring." className="h-96" />
@@ -36,7 +36,7 @@ export const WhySlider = () => {
                                 individual compute instances. Instead the endpoint details the health of the services provided, e.g. Card Processing, Video Encryption.
                             </p>
                             <p className="font-light text-gray-500 sm:text-xl pb-2">
-                                The health of the system can shared with additional detail information about incidents and maintenance without exposing sensitive
+                                The health of the system can be shared with additional detailed information about incidents and maintenance without exposing sensitive
                                 internal information.
                             </p>
                         </div>
@@ -55,7 +55,7 @@ export const WhySlider = () => {
                             <p className="font-light text-gray-500 sm:text-xl pb-2">
                                 An SIM Aggregator could be the same tool you are using for monitoring your internal systems, therefore
                                 combining the health information of your internal systems with the health of the Cloud Services you
-                                using.
+                                are using.
                             </p>
                         </div>
                         <img src="/why/step3.png" alt="Data collected by internal monitoring." className="h-96" />

@@ -23,12 +23,12 @@ export const Why = () => {
                     </p>
                     <p className="mb-8 font-light lg:text-xl">
                         When your website experiences an issue you need to know why and if it is one of your Cloud service providers?
-                        This means going to each suppliers status page and manually checking the status. This delays resolving issues
+                        This means going to each supplier's status page and manually checking the status. This delays resolving issues
                         and costs money.
                     </p>
                     <p className="mb-8 font-light lg:text-xl">
                         SIM aims to change this by creating a standard by which the status of Cloud services can be shared. By having a single standard
-                        it become easy to provision dashboards that monitor the services you are dependent on. When an issue occurs you can see from a single
+                        it becomes easy to provision dashboards that monitor the services you are dependent on. When an issue occurs you can see from a single
                         page where the issue is and with which provider.                </p>
 
 
