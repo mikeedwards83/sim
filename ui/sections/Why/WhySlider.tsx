@@ -7,7 +7,7 @@ export const WhySlider = () => {
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 ">
                 The Data Flow
             </h2>
-            <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+            <div className="h-56 sm:h-90 xl:h-80 2xl:h-96">
                 <Carousel
                     slideInterval={10000}
                     rightControl={<Right />}

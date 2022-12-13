@@ -1,4 +1,4 @@
-import { Card } from "flowbite-react"
+import { Card } from "../components/Card"
 
 export const YourSupport = () => {
 

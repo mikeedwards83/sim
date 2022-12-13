@@ -28,7 +28,7 @@ export const Code = (props: { title: ReactNode, object: any, capitialise?: boole
                 </span>
             </div>
             {code &&
-                <pre className="language-js p-4 bg-white whitespace-pre-wrap border-slate-400 border border-t-0 overf rounded-b-md overflow-hidden" dangerouslySetInnerHTML={{ __html: code }}>
+                <pre className="language-js p-4 bg-white whitespace-pre-wrap border-slate-400 border border-t-0  rounded-b-md overflow-hidden" dangerouslySetInnerHTML={{ __html: code }}>
                 </pre>}
         </>
     )
