@@ -5,7 +5,7 @@ export const Card = (props: { children: ReactNode; imgSrc: string }) => {
 
   return (
     <div
-      className="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col"
+      className="flex rounded-lg border border-gray-200 bg-white shadow-md  flex-col"
       data-testid="flowbite-card"
     >
       <img alt="" className="rounded-t-lg" src={imgSrc} />

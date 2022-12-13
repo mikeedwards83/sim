@@ -4,7 +4,7 @@ export const PageHeader = () => {
   return (
     <div className="fixed w-screen bg-white " style={{ zIndex: 1000 }}>
       <div className="grid  max-w-screen-xl px-4  mx-auto ">
-        <nav className="border-gray-200 bg-white px-2 py-2.5  dark:bg-gray-800 sm:px-4">
+        <nav className="border-gray-200 bg-white px-2 py-2.5   sm:px-4">
           <div className="mx-auto flex flex-wrap items-center justify-between">
             <a href="/" className="flex items-center">
               <img
