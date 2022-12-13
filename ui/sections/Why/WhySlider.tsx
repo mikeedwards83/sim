@@ -3,15 +3,16 @@ import { Carousel, Timeline } from "flowbite-react"
 export const WhySlider = () => {
 
     return (
-        <>
+        <div className="hidden lg:block">
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 ">
                 The Data Flow
             </h2>
-            <div className="h-56 sm:h-90 xl:h-80 2xl:h-96">
+            <div className="h-96  ">
                 <Carousel
                     slideInterval={10000}
                     rightControl={<Right />}
                     leftControl={<Left />}
+
 
                 >
                     <div className="gap-8 grid lg:grid-cols-2 xl:gap-16">
@@ -77,7 +78,7 @@ export const WhySlider = () => {
                 </Carousel>
             </div>
 
-        </>
+        </div>
     )
 }
 
