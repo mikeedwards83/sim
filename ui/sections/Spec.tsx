@@ -53,12 +53,12 @@ export const Spec = () => {
                         style="default"
                     >
                         <Tabs.Item
-                            icon={DocumentIcon}
+                            icon={DocumentIcon as any}
                             active={true} title="Documentation">
                             <Docs />
                         </Tabs.Item>
                         <Tabs.Item
-                            icon={CodeBracketIcon}
+                            icon={CodeBracketIcon as any}
                             title="Example"
                         >
                             <Example />
