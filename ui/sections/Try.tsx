@@ -156,21 +156,21 @@ export const EndpointTest = (props: { url: string }) => {
                     </div>
                     <Tabs.Group aria-label="Pills" style="default">
                         <Tabs.Item
-                            icon={HeartIcon}
+                            icon={HeartIcon as any}
                             active={true}
                             title="Status"
                         >
                             <StatusDashboard services={data.services} />
                         </Tabs.Item>
-                        <Tabs.Item icon={BoltIcon} title="Incident">
+                        <Tabs.Item icon={BoltIcon as any} title="Incident">
                             <IncidentsDashboard incidents={data.incidents} />
                         </Tabs.Item>
-                        <Tabs.Item icon={WrenchIcon} title="Maintenance">
+                        <Tabs.Item icon={WrenchIcon as any} title="Maintenance">
                             <MaintenancesDashboard
                                 maintenances={data.maintenance}
                             />
                         </Tabs.Item>
-                        <Tabs.Item icon={CodeBracketIcon} title="Json">
+                        <Tabs.Item icon={CodeBracketIcon as any} title="Json">
                             <Code
                                 object={data}
                                 title={`GET:${url}`}
@@ -375,7 +375,7 @@ const ServiceDashboard = (props: { service: IService; level?: number }) => {
                     <span className="w-22 block mr-3 ">
                         {service.status === 200 && (
                             <Badge
-                                icon={ShieldCheckIcon}
+                                icon={ShieldCheckIcon as any}
                                 color="success"
                                 size="sm"
                             >
@@ -384,7 +384,7 @@ const ServiceDashboard = (props: { service: IService; level?: number }) => {
                         )}
                         {service.status === 300 && (
                             <Badge
-                                icon={ShieldExclamationIcon}
+                                icon={ShieldExclamationIcon as any}
                                 color="warning"
                                 size="sm"
                             >
@@ -392,7 +392,7 @@ const ServiceDashboard = (props: { service: IService; level?: number }) => {
                             </Badge>
                         )}
                         {service.status === 400 && (
-                            <Badge icon={FireIcon} color="failure" size="sm">
+                            <Badge icon={FireIcon  as any} color="failure" size="sm">
                                 Critical
                             </Badge>
                         )}
